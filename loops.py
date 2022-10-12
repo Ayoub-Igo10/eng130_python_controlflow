@@ -18,10 +18,18 @@ for number in list_data:
 
 
 
+student_data = {
+    "name" : "Ayoub",
+    "surname" : "Igozouln",
+    "age" : "22"
+}
 
-# print(list_data)
-# print(list_data[0])
-# print(list_data[1])
-# print(list_data[2])
-# print(list_data[3])
-# print(list_data[4])
+
+for key in student_data:
+    print(key)
+values = student_data.values()
+print(values)
+for key in student_data:
+    if key in student_data:
+        print(key, student_data[key])
+

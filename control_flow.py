@@ -33,7 +33,19 @@
 # weather = "time"
 # # if it's cold:
 
-if age == ">=18":# True or False
-    print("allow entry")
-    #Enter cinema
+# age restriction for movie ticket
+age = int(input('What is your age?:'))
 
+if age >= 18:
+    print("You are eligible for the 18 plus movie!")
+elif age >= 16:
+    print("You are eligible for the 16 plus movie!")
+elif age >= 15:
+    print("You are eligible for the 15 plus movie!")
+elif age >= 12:
+    print("You are eligible for the 12 plus movie!")
+elif age >= 117:
+    print("Your age must be under 117")
+
+else:
+    print("Error, please try again :( ")
