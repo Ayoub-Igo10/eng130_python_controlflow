@@ -1,10 +1,3 @@
-# Python Control Flow
-## if elif else
-### Loops - for loop - while loop
-#### Python keywords break - continue etc
- 
-# Control flow:
-```python
 # Sudo Coding
 
 weather = "time"
@@ -36,5 +29,3 @@ else:
 # 15 & above
 # if nothing matched inform the user to enter their age again = ELSE
 # user ust not be allowed to enter age over 117 years
-
-```
