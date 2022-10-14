@@ -16,6 +16,16 @@ for number in list_data:
 # print all the values
 # print key with matching value
 
+# student_data = {
+#     "name" : "Ayoub",
+#     "surname" : "Igozouln",
+#     "age" : "22"
+
+def print_key_and_values(dictionary):
+
+    for key in dictionary:         # loops through all the items in dictionary and stores it in name
+        print(key)                 # print first key
+        print(dictionary[key])    # print corresponding value
 
 
 student_data = {
@@ -23,13 +33,5 @@ student_data = {
     "surname" : "Igozouln",
     "age" : "22"
 }
-
-
-for key in student_data:
-    print(key)
-values = student_data.values()
-print(values)
-for key in student_data:
-    if key in student_data:
-        print(key, student_data[key])
+print_key_and_values(student_data)
 

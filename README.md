@@ -77,3 +77,49 @@ for key in student_data:
 
 
 ```
+# Control Flow Refactor
+```python
+print("Hello Welcome to Ayoub's Cinema")
+age = int(input('What is your age?:'))
+def movie_rating(age):
+    if age > 117:
+        print("Your age must be under 117")
+    elif age >= 18:
+        print("You are eligible for the 18 plus movie!")
+    elif age >= 16:
+        print("You are eligible for the 16 plus movie!")
+    elif age >= 15:
+        print("You are eligible for the 15 plus movie!")
+    elif age >= 12:
+        print("You are eligible for the 12 plus movie!")
+    else:
+        print("Sorry, You are too young ! ")
+    return f"Your age is {age}"
+print(movie_rating(age))
+```
+
+# Loops Refactor
+```python
+def print_key_and_values(dictionary):
+
+    for key in dictionary:         # loops through all the items in dictionary and stores it in name
+        print(key)                 # print first key
+        print(dictionary[key])    # print corresponding value
+
+
+student_data = {
+    "name" : "Ayoub",
+    "surname" : "Igozouln",
+    "age" : "22"
+}
+print_key_and_values(student_data)
+```
+# While Loop Refactor
+```python
+def cal_Age(birth_year , current_year ):
+    age = current_year - birth_year
+    return age
+current_year = int(input(" what is the current year?"))
+birth_year = int(input(" what year was you born in?"))
+print(cal_Age(birth_year , current_year))
+```

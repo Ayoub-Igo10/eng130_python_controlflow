@@ -34,18 +34,20 @@
 # # if it's cold:
 
 # age restriction for movie ticket
+print("Hello Welcome to Ayoub's Cinema")
 age = int(input('What is your age?:'))
-
-if age >= 18:
-    print("You are eligible for the 18 plus movie!")
-elif age >= 16:
-    print("You are eligible for the 16 plus movie!")
-elif age >= 15:
-    print("You are eligible for the 15 plus movie!")
-elif age >= 12:
-    print("You are eligible for the 12 plus movie!")
-elif age >= 117:
-    print("Your age must be under 117")
-
-else:
-    print("Error, please try again :( ")
+def movie_rating(age):
+    if age > 117:
+        print("Your age must be under 117")
+    elif age >= 18:
+        print("You are eligible for the 18 plus movie!")
+    elif age >= 16:
+        print("You are eligible for the 16 plus movie!")
+    elif age >= 15:
+        print("You are eligible for the 15 plus movie!")
+    elif age >= 12:
+        print("You are eligible for the 12 plus movie!")
+    else:
+        print("Sorry, You are too young ! ")
+    return f"Your age is {age}"
+print(movie_rating(age))
