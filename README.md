@@ -123,3 +123,77 @@ current_year = int(input(" what is the current year?"))
 birth_year = int(input(" what year was you born in?"))
 print(cal_Age(birth_year , current_year))
 ```
+#### OOP code along diagram
+
+- step 1: create animal.py as a parent
+- step 2: create retile.py as a child to inherit - abstract etc.
+- step 3: snake.py & inherit from reptile
+- step 4: python_oop.py
+
+## Create a class called Reptile
+```python
+# how do we make the animal class a parent class - how could we inherit from the Animal class
+
+from animal import Animal # importing everything from Animal class
+class Reptile(Animal): # Inherit from Animal class
+    def __init__(self):
+        super().__init__() # super is used to inherit everything from the parent class
+        self.cold_blooded = True
+        self.tetrapods = None
+        self.heart_chambers = [3, 4]
+
+    def hunt(self):
+        return "Keep working hard to find food"
+
+    def use_venom(self):
+        return "if I have it i will use it"
+
+smart_reptile = Reptile()
+print(smart_reptile.breathe())
+print(smart_reptile.hunt())
+```
+Task 2:
+```python
+from reptile import Reptile
+
+class Snake(Reptile):
+
+    def __init__(self):
+        super().__init__()
+        self.forked_tongue = True
+    def use_tongue_to_smell(self):
+        return "if I can touch it I can smell it as well"
+
+# smart_snake = Snake()
+# print(f" This function is called from parent class {smart_snake.hunt()}")
+# print(f" This function is called from the current class {smart_snake.use_tongue_to_smell()}")
+# print(f" This function is called from grandparent class {smart_snake.breathe()}")
+```
+## Class Animal Task
+```python
+# create a class called Animal - file-name starts with a - class name starts with A
+# add the common attributes/var behaviour/functions
+# syntax class name: - class Animal:
+class Animal: # follow the correct naming convention & best practices
+    # we need to initialise with a builtin method called __init__(self)
+    # self refers to current class
+    def __init__(self):# any attributes attached to the class should be part of init method
+        # self.var = True
+        self.alive = True
+        self.spine = True
+        self.eyes = True
+
+# lets create some methods to add common behaviours
+    def breathe(self):
+        return "Keep breathing to stay alive "
+    # lets add one more behaviour
+    def eat (self):
+        return "Time to eat!...."
+
+# create an object of this class
+cat = Animal() # this will crate an object our Animal
+
+#print(cat.breathe()) # calling a method using object of the Animal class
+#print(cat.eat())
+
+```

@@ -29,9 +29,6 @@
 #  print(f"your age is {age}")
 #  # calculate their age - year of birth etc.
 
-
-
-
 def cal_Age(birth_year , current_year ):
     age = current_year - birth_year
     return age
